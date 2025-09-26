@@ -81,7 +81,7 @@ body{
 }
 
 
-{.site-header .logo
+.site-header .logo{
 
     Height: 50px;
     width: auto;
@@ -101,11 +101,10 @@ body{
 /*tagline kode(under overskrift*/
 
 .tagline {
-text align: center;
+    text-align: center;
 Font-size: 18px;
 color: #333;
 margin: 20px 0;
-
 }
 
     
