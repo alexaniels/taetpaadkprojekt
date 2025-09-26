@@ -1,11 +1,12 @@
 /* Hamburger menu */
-*::after, *::before{
+*,
+*::after, 
+*::before{
     box-sizing: border-box;
 }
 
 body{
     margin: 0;
-
     background-color: #d6cfc4;
 }
 
