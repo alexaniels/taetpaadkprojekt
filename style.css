@@ -8,6 +8,7 @@
 body{
     margin: 0;
     background-color: #d6cfc4;
+    max-width: 390px;
 }
 
 :root{
@@ -74,7 +75,7 @@ body{
     
     display: flex;
     align-items: center;
-    gap: 10px;                  /* Afstand mellem logo og tekst */
+    gap: 35px;                  /* Afstand mellem logo og tekst */
     padding: 10px 20px;
     background-color: #B9AFA1;
     text-align: center;
@@ -84,8 +85,12 @@ body{
 
 .site-header .logo{
 
-    Height: 50px;
+    Height: 100px;
     width: auto;
+       margin-top: 35px; /* rykker logoet ned */
+    margin-left: -30px; /* rykker logoet til venstre */
+
+
 }
 
 .site-header h1 {
@@ -95,6 +100,7 @@ body{
     font-weight: bold;
     letter-spacing: 1px; /* Lille ekstra afstand mellem bogstaver */
     margin: 0 ;
+   
 
 }
 
@@ -108,7 +114,26 @@ color: #333;
 margin: 20px 0;
 }
 
-    
+ /* Container for billeder */
+main {
+  max-width: 390px;       
+  margin: 0 auto;         
+  padding: 10px;  
+ }
 
+main img {
+  width: 100%;            /* fyld containerens bredde */
+  max-width: 390px;   
+  border-radius: 12px;    /* runde hjørner */
+  margin-bottom: 12px;    /* luft mellem billederne */
+  display: block; 
+}
 
+main .row {
+  display: flex;
+  gap: 12px;              /* luft mellem billederne */
+}
 
+main .row img {
+  width: 50%;             /* to lige store billeder */
+}
