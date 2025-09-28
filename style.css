@@ -79,13 +79,14 @@ body{
     padding: 10px 20px;
     background-color: #B9AFA1;
     text-align: center;
+    height: 130px;
     
 }
 
 
 .site-header .logo{
 
-    Height: 100px;
+    height: 100px;
     width: auto;
        margin-top: 35px; /* rykker logoet ned */
     margin-left: -30px; /* rykker logoet til venstre */
@@ -114,26 +115,85 @@ color: #333;
 margin: 20px 0;
 }
 
- /* Container for billeder */
+____________________________________________
+
 main {
-  max-width: 390px;       
-  margin: 0 auto;         
-  padding: 10px;  
- }
-
-main img {
-  width: 100%;            /* fyld containerens bredde */
-  max-width: 390px;   
-  border-radius: 12px;    /* runde hjørner */
-  margin-bottom: 12px;    /* luft mellem billederne */
-  display: block; 
+  max-width: 390px;
+  margin: 0 auto;
+  padding: 10px;
 }
 
-main .row {
+/* Rækker med to billeder */
+.row {
   display: flex;
-  gap: 12px;              /* luft mellem billederne */
+  gap: 12px;
+  margin-top: 12px;
 }
 
-main .row img {
-  width: 50%;             /* to lige store billeder */
+/* Wrapper til hvert billede */
+.image-box {
+  position: relative;
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
 }
+
+/* Selve billedet */
+.image-box img {
+  width: 100% !important;
+  height: auto;
+  display: block;
+}
+
+/* Tekstboksen ovenpå billederne */
+.overlay {
+  position: absolute;
+  top: 58%;                        
+  left: 50%;                      
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.4);     
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;           /* fjern underline på link */
+  display: inline-block;           /* gør hele boksen klikbar */
+  cursor: pointer;
+}
+
+.image-box.tall img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.image-box {
+  position: relative;
+  flex: 1;
+}
+
+main .row:last-of-type {
+  margin-bottom: 20px;  /* Lille luft stykke ned til SOME */
+}
+
+
+/* === FODNOTE SOME === */
+.footer {
+  border-top: 2px solid black;  /* sort linje for oven */
+  background-color: #d6cfc4;    /* samme baggrundsfarve som resten */
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer .social-icons {
+  display: flex;
+  justify-content: space-around; /* ikonerne jævnt fordelt */
+  align-items: center;
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+.footer .social-icons img {
+  width: 35px;
+  height: 35px;
+}
+
