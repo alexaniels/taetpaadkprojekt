@@ -1,0 +1,78 @@
+.page-main.omos {
+  max-width: 390px;        /* mobilbredde */
+  margin: 0 auto;
+  padding: 16px 14px 90px; /* bundpadding til footeren */
+}
+
+.page-main.omos .tagline {
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+  margin: 14px 0 12px;
+}
+
+.hero img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.10);
+}
+
+/* Grønne bokse */
+.card {
+  background: #556729;
+  color: #fff;
+  border-radius: 18px;
+  padding: 16px 16px 18px;
+  margin: 16px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,.12);
+}
+
+.card h3 {
+  text-align: center;
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.card .sub {
+  text-align: center;
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+
+.card p {
+  line-height: 1.45;
+  margin: 0 0 10px;
+}
+
+.bullets {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 0;
+}
+
+.bullets li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.bullets li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Justér sideheaderen lidt så “OM OS” står som på mockup */
+.site-header .page-title {
+  margin: 0;
+  color: #406D42;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+.site-header .page-title {
+  margin-left: 23px;

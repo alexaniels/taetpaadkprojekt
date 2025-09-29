@@ -22,12 +22,12 @@
   text-align: left !important;
 }
 
-/* === MAIN LAYOUT === */
+/* LAYOUT */
 .page-main, main {
   max-width: 420px;
   margin: 0 auto;
   padding: 24px 16px;
-  min-height: 100vh;      /* fylder hele skærmen */
+  min-height: 100vh;      
   box-sizing: border-box;
 }
 
@@ -35,7 +35,7 @@
 .row {
   display: flex;
   gap: 25px;
-  margin-bottom: 70px;     /* mere luft mellem rækker */
+  margin-bottom: 70px;     /* luft mellem rækker */
 }
 
 .image-box {
@@ -47,8 +47,8 @@
   width: 100%;
   display: block;
   border-radius: 14px;
-  height: 140px;           /* gør billederne højere */
-  object-fit: cover;       /* beskær pænt */
+  height: 140px;           
+  object-fit: cover;       
 }
 
 .image-box .overlay {
@@ -64,7 +64,7 @@
   white-space: nowrap;
 }
 
-/* === SØGEBAR === */
+/* Søg */
 .search-container {
   display: flex;
   align-items: center;
