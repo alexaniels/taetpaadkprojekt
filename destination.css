@@ -1,41 +1,43 @@
-/* === HEADER === */
+
 .site-header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; 
-  gap: 16px;
-  padding: 14px 16px;
-  background: #B9AFA1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 16px;
+    padding: 14px 16px;
+    background: #B9AFA1;
 }
+
 
 .site-header .logo {
-  height: 100px;   /* større logo */
-  width: auto;
+    height: 100px; 
+    width: auto;
 }
+
 
 .site-header .page-title {
-  margin: 0;
-  color: #406D42;
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-align: left !important;
+    margin: 0;
+    color: #406D42;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: left !important;
 }
 
-/* LAYOUT */
+/*LAYOUT*/
 .page-main, main {
-  max-width: 420px;
-  margin: 0 auto;
-  padding: 24px 16px;
-  min-height: 100vh;      
-  box-sizing: border-box;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    min-height: 100vh;      
+    box-sizing: border-box;
 }
 
-/* === RÆKKER MED BILLEDER === */
+/* ===RÆKKER MED BILLEDER=== */
 .row {
   display: flex;
   gap: 25px;
-  margin-bottom: 70px;     /* luft mellem rækker */
+  margin-bottom: 70px;     /*luft mellem rækker*/
 }
 
 .image-box {
@@ -92,13 +94,6 @@
   cursor: pointer;
 }
 
-/* === SEPARATOR OG HASHTAGS === */
-hr {
-  border: 0;
-  border-top: 1px solid #b8b0a4;
-  margin: 24px 0;
-}
-
 .tagline {
   text-align: center;
   margin: 0 0 20px;
@@ -107,11 +102,6 @@ hr {
   font-weight: 600;
 }
 
-/* === FOOTER === */
-.footer {
-  margin-top: auto;
-  padding: px 0;
-}
 
 
 

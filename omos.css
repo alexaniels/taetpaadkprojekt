@@ -1,7 +1,7 @@
 .page-main.omos {
-  max-width: 390px;        /* mobilbredde */
+  max-width: 390px;       
   margin: 0 auto;
-  padding: 16px 14px 90px; /* bundpadding til footeren */
+  padding: 16px 14px 90px; 
 }
 
 .page-main.omos .tagline {
@@ -25,7 +25,6 @@
   border-radius: 18px;
   padding: 16px 16px 18px;
   margin: 16px 0;
-  box-shadow: 0 4px 12px rgba(0,0,0,.12);
 }
 
 .card h3 {
@@ -65,7 +64,6 @@
   top: 0;
 }
 
-/* Justér sideheaderen lidt så “OM OS” står som på mockup */
 .site-header .page-title {
   margin: 0;
   color: #406D42;

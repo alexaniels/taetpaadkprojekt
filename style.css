@@ -69,13 +69,16 @@ body{
     width: 0;
 }  
 
+
+
+
 /* Header */
 
 .site-header {
     
     display: flex;
     align-items: center;
-    gap: 35px;                  /* Afstand mellem logo og tekst */
+    gap: 35px;                 
     padding: 10px 20px;
     background-color: #B9AFA1;
     text-align: center;
@@ -88,108 +91,105 @@ body{
 
     height: 100px;
     width: auto;
-       margin-top: 35px; /* rykker logoet ned */
-    margin-left: -30px; /* rykker logoet til venstre */
+    margin-top: 35px; /* rykker logo ned */
+    margin-left: -30px; /* rykker logo til venstre */
 
 
 }
 
 .site-header h1 {
 
+
     color: #406D42;
     font-size: 20px;
     font-weight: bold;
-    letter-spacing: 1px; /* Lille ekstra afstand mellem bogstaver */
+    letter-spacing: 1px;
     margin: 0 ;
    
-
 }
 
-
-/*tagline kode(under overskrift*/
 
 .tagline {
-    text-align: center;
-Font-size: 18px;
-color: #333;
-margin: 20px 0;
-}
 
-____________________________________________
+    text-align: center;
+    Font-size: 18px;
+    color: #333;
+    margin: 20px 0;
+}
 
 main {
-  max-width: 390px;
-  margin: 0 auto;
-  padding: 10px;
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 10px;
 }
 
-/* Rækker med to billeder */
+/* Rækker med billeder */
+
 .row {
-  display: flex;
-  gap: 12px;
-  margin-top: 12px;
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
 }
 
-/* Wrapper til hvert billede */
+/* Bøjede hjørner til billede */
 .image-box {
-  position: relative;
-  flex: 1;
-  border-radius: 12px;
-  overflow: hidden;
+    position: relative;
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
-/* Selve billedet */
 .image-box img {
-  width: 100% !important;
-  height: auto;
-  display: block;
+    width: 100% !important;
+    height: auto;
+    display: block;
 }
 
-/* Tekstboksen ovenpå billederne */
+/* Tekstboks ovenpå billeder */
 .overlay {
-  position: absolute;
-  top: 58%;                        
-  left: 50%;                      
-  transform: translate(-50%, -50%);
-  background: rgba(0,0,0,0.4);     
-  color: white;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-size: 14px;
-  text-decoration: none;           /* fjern underline på link */
-  display: inline-block;           /* gør hele boksen klikbar */
-  cursor: pointer;
+    position: absolute;
+    top: 58%;                        
+    left: 50%;                      
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.4);     
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;           /* fjern link streg */
+    display: inline-block;           /* klikbar boks */
+    cursor: pointer;
 }
 
 .image-box.tall img {
-  max-height: 200px;
-  object-fit: cover;
+    max-height: 200px;
+    object-fit: cover;
 }
 
 .image-box {
-  position: relative;
-  flex: 1;
+    position: relative;
+    flex: 1;
 }
 
 main .row:last-of-type {
-  margin-bottom: 20px;  /* Lille luft stykke ned til SOME */
+    margin-bottom: 20px;  /* Lille luft stykke ned til SOME fodnote */
 }
 
 
 /* === FODNOTE SOME === */
 .footer {
-  border-top: 2px solid black;  /* sort linje for oven */
-  background-color: #d6cfc4;   
-  padding: 10px 0;
+    border-top: 2px solid black;  /*sort linje*/
+    background-color: #d6cfc4;   
+    padding: 10px 0;
  
 }
 
 .footer .social-icons {
-  display: flex;
-  justify-content: space-around; /* ikonerne jævnt fordelt */
-  align-items: center;
-  max-width: 390px;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    max-width: 390px;
+    margin: 0 auto;
 }
 
 .footer .social-icons img {
