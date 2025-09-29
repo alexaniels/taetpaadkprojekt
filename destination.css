@@ -1,0 +1,117 @@
+/* === HEADER === */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  gap: 16px;
+  padding: 14px 16px;
+  background: #B9AFA1;
+}
+
+.site-header .logo {
+  height: 100px;   /* større logo */
+  width: auto;
+}
+
+.site-header .page-title {
+  margin: 0;
+  color: #406D42;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: left !important;
+}
+
+/* === MAIN LAYOUT === */
+.page-main, main {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  min-height: 100vh;      /* fylder hele skærmen */
+  box-sizing: border-box;
+}
+
+/* === RÆKKER MED BILLEDER === */
+.row {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 70px;     /* mere luft mellem rækker */
+}
+
+.image-box {
+  position: relative;
+  flex: 1;
+}
+
+.image-box img {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+  height: 140px;           /* gør billederne højere */
+  object-fit: cover;       /* beskær pænt */
+}
+
+.image-box .overlay {
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+/* === SØGEBAR === */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 28px 0;
+}
+
+.search-container input[type="text"] {
+  width: 260px;
+  height: 44px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 2px solid #556729;
+  background-color: #556729;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-container img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* === SEPARATOR OG HASHTAGS === */
+hr {
+  border: 0;
+  border-top: 1px solid #b8b0a4;
+  margin: 24px 0;
+}
+
+.tagline {
+  text-align: center;
+  margin: 0 0 20px;
+  color: #333;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* === FOOTER === */
+.footer {
+  margin-top: auto;
+  padding: px 0;
+}
+
+
+
