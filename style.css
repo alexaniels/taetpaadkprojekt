@@ -179,9 +179,9 @@ main .row:last-of-type {
 /* === FODNOTE SOME === */
 .footer {
   border-top: 2px solid black;  /* sort linje for oven */
-  background-color: #d6cfc4;    /* samme baggrundsfarve som resten */
+  background-color: #d6cfc4;   
   padding: 10px 0;
-  text-align: center;
+ 
 }
 
 .footer .social-icons {
