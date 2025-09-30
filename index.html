@@ -1,27 +1,82 @@
-<!DOCTYPE html> <!--for at starte en html fil, gem filen som en html og derefter ! at lave dette-->
+<!DOCTYPE html>
 <html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TætpåDK</title>
-    <link rel="stylesheet" href="css1/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    
-    <nav>
-  <input type="checkbox" id="check">
-  <label for="check" class="checkbtn">
-    <i class="fas fa-bars"></i>
-  </label>
-  <div class="nav-mobile">
-    <a href="#">TætpåDK</a>
-    <a href="#">Destination</a>
-    <a href="#">Om os</a>
-    <a href="#">Konkurrence</a>
+  <body>
+    <header class="site-header">
+      <img src="img/Logoprojekt.png" class="logo" />
+      <h1>TÆT PÅ DK</h1>
+
+      <label class="hamburger-menu">
+      <input type="checkbox" />
+    </label>
+
+    </header>
+
+    <h2 class="tagline">Store oplevelser - små klimaaftryk</h2>
+
+
+<main>
+  <div class="image-box">
+    <img src="img/gruppeforside.jpg" alt="Gruppeforside">
+    <a href="destination.html" class="overlay">Se dit næste eventyr</a>
   </div>
-</nav>
+
+  <div class="row">
+    <div class="image-box">
+      <img src="img/fyrtårn.jpg" alt="Fyrtårn">
+      <a href="destination.html" class="overlay">Book nu</a>
+    </div>
+    <div class="image-box">
+      <img src="img/surf.jpg" alt="Surf">
+      <a href="destination.html" class="overlay">Book nu</a>
+    </div>
+  </div>
 
 
-</body>
+  <!-- Tredje række -->
+  <div class="row">
+    <div class="image-box">
+      <img src="img/dkkort.png" alt="Danmarkskort">
+      <div class="overlay">Find din destination</div>
+    </div>
+    <div class="image-box tall">
+      <img src="img/konkurrence.jpg" alt="Konkurrence">
+      <div class="overlay">
+        Konkurrence #TÆTPÅDK <br>
+        Post dine billeder <br>
+        Vind rejseudgifter retur
+      </div>
+    </div>
+  </div>
+</main>
+
+
+    <!-- <aside class="sidebar">
+      <nav>
+        <div>TætpåDK</div>
+        <div>Inspiration</div>
+        <div>Om os</div>
+        <div>Konkurrence</div>
+      </nav>
+    </aside>
+  -->
+
+
+  <!--FODNOTE MED SOME OG KONTAKT-->
+   <footer class="footer">
+  <div class="social-icons">
+    <a href="#"><img src="img/kontakt.jpg" ></a>
+    <a href="#"><img src="img/tiktok.jpg" ></a>
+    <a href="#"><img src="img/insta.jpg" ></a>
+    <a href="#"><img src="img/facebook.jpg" ></a>
+  </div>
+</footer>
+
+  </body>
 </html>
