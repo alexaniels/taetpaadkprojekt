@@ -7,6 +7,7 @@
 
 body {
   margin: 0;
+  background-color: #cec8bf;
 }
 
 :root {
@@ -14,7 +15,7 @@ body {
   --bar-height: 8px;
   --hamburger-gap: 6px;
   --foreground: black; /*farve på hamburger bar*/
-  --foreground-navbar: #cec8bf; /*baggrundsfarve i menuen*/
+  --foreground-navbar: #B9AFA1; /*baggrundsfarve i menuen*/
   --background: black;
   --hamburger-margin: 8px;
   --animation-timing: 200ms ease-in-out;
@@ -90,10 +91,16 @@ body {
   right: 0;
   max-width: 10rem;
   min-height: 100vh;
+  z-index: 0; /*for at rykke sidebaren op på øverste lag på siden*/
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
   translate: 0;
+}
+
+div a {
+color: black;
+text-decoration: none;
 }
 
 /* Header */
@@ -107,7 +114,6 @@ body {
     background-color: #B9AFA1;
     text-align: center;
     height: 130px;
-    
 }
 
 
