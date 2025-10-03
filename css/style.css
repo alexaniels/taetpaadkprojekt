@@ -11,12 +11,12 @@ body {
 }
 
 :root {
-  --bar-width: 60px;
-  --bar-height: 8px;
+  --bar-width: 55px;
+  --bar-height: 6px;
   --hamburger-gap: 6px;
-  --foreground: black; /*farve på hamburger bar*/
+  --foreground: #333; /*farve på hamburger bar*/
   --foreground-navbar: #B9AFA1; /*baggrundsfarve i menuen*/
-  --background: black;
+  --background: #333;
   --hamburger-margin: 8px;
   --animation-timing: 200ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2); /*der er tre barer og mellemrum*/
@@ -37,8 +37,8 @@ body {
 }
 
 .hamburger-menu:has(input:checked) {
-  --foreground: black;
-  --background: black;
+  --foreground: #333;
+  --background: #333;
 }
 
 .hamburger-menu::before,
@@ -91,7 +91,7 @@ body {
   right: 0;
   max-width: 10rem;
   min-height: 100vh;
-  z-index: 1; /*for at rykke sidebaren op på øverste lag på siden*/
+  z-index: 1; /*for at rykke sidebaren et lag over billederne på siden*/
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
@@ -131,8 +131,8 @@ text-decoration: none;
   margin: 0 ;  
 }
 
-
-.tagline {
+.tagline,
+.rubrik {
   text-align: center;
   Font-size: 18px;
   color: #333;
