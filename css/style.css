@@ -8,6 +8,7 @@
 body {
   margin: 0;
   background-color: #EEEAE4; /*baggrundsfarve på hjemmesiden*/
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -17,7 +18,7 @@ body {
   --foreground: #333; /*farve på hamburger bar*/
   --foreground-navbar: #B9AFA1; /*baggrundsfarve i menuen*/
   --background: #333;
-  --hamburger-margin: 8px;
+  --hamburger-margin: 50px;
   --animation-timing: 200ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2); /*der er tre barer og mellemrum*/
 }
