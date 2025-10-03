@@ -148,14 +148,19 @@ main {
 
 /* Rækker med billeder */
 
-.row {
+.row,
+.galleri {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 12px;
   margin-top: 12px;
 }
 
 /* Bøjede hjørner til billede */
-.image-box {
+.image-box,
+.galleri {
+  object-fit: cover;
   position: relative;
   flex: 1;
   border-radius: 12px;
@@ -163,9 +168,18 @@ main {
 }
 
 .image-box img {
-  width: 100% !important;
+  object-fit: cover;
+  width: 100% /*!important*/;
   height: auto;
   display: block;
+  overflow: hidden;
+}
+.galleri img {
+  object-fit: cover;
+  width: 100% /*!important*/;
+  height: 10rem;
+  display: block;
+  overflow: hidden;
 }
 
 /* Tekstboks ovenpå billeder */
@@ -239,6 +253,6 @@ main .row:last-of-type {
   padding: 0.5em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { /*dette gør at teksten i footeren følger med siden, når den gøres mindre eller større*/
   .footer__section { width: 100%; }
 }
