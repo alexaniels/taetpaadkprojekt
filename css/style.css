@@ -124,7 +124,7 @@ text-decoration: none;
   margin-left: -30px; /* rykker logo til venstre */
 }
 
-.site-header h1 {
+.site-header .frontpage {
   color: #406D42;
   font-size: 20px;
   font-weight: bold;
