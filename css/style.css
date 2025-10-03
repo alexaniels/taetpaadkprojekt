@@ -215,16 +215,12 @@ main .row:last-of-type {
 
 /*footer*/
 .footer {
-  border-top: 2px solid black;  /*sort linje*/
-  background-color: #d6cfc4;   
+  border-top: 2px solid black;  /*sort linje*/ 
   padding: 10px 0;
-}
-
-.footer{
   font-size: 0.85rem;
   padding: 20px 0;
   line-height: 1.2;
-  background: #cec8bf;
+  background: #eeeae4;
 }
 
 .footer__sections {
