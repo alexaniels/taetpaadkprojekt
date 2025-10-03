@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  background-color: #cec8bf;
+  background-color: #EEEAE4; /*baggrundsfarve på hjemmesiden*/
 }
 
 :root {
@@ -91,7 +91,7 @@ body {
   right: 0;
   max-width: 10rem;
   min-height: 100vh;
-  z-index: 0; /*for at rykke sidebaren op på øverste lag på siden*/
+  z-index: 1; /*for at rykke sidebaren op på øverste lag på siden*/
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
@@ -106,124 +106,138 @@ text-decoration: none;
 /* Header */
 
 .site-header {
-    
-    display: flex;
-    align-items: center;
-    gap: 35px;                 
-    padding: 10px 20px;
-    background-color: #B9AFA1;
-    text-align: center;
-    height: 130px;
+  display: flex;
+  align-items: center;
+  gap: 35px;                 
+  padding: 10px 20px;
+  background-color: #B9AFA1;
+  text-align: center;
+  height: 130px;
 }
 
 
 .site-header .logo{
-
-    height: 100px;
-    width: auto;
-    margin-top: 35px; /* rykker logo ned */
-    margin-left: -30px; /* rykker logo til venstre */
-
-
+  height: 100px;
+  width: auto;
+  margin-top: 35px; /* rykker logo ned */
+  margin-left: -30px; /* rykker logo til venstre */
 }
 
 .site-header h1 {
-
-
-    color: #406D42;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin: 0 ;
-   
+  color: #406D42;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0 ;  
 }
 
 
 .tagline {
-
-    text-align: center;
-    Font-size: 18px;
-    color: #333;
-    margin: 20px 0;
+  text-align: center;
+  Font-size: 18px;
+  color: #333;
+  margin: 20px 0;
 }
 
 main {
-    max-width: 390px;
-    margin: 0 auto;
-    padding: 10px;
+  max-width: 390px;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 /* Rækker med billeder */
 
 .row {
-    display: flex;
-    gap: 12px;
-    margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
 }
 
 /* Bøjede hjørner til billede */
 .image-box {
-    position: relative;
-    flex: 1;
-    border-radius: 12px;
-    overflow: hidden;
+  position: relative;
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .image-box img {
-    width: 100% !important;
-    height: auto;
-    display: block;
+  width: 100% !important;
+  height: auto;
+  display: block;
 }
 
 /* Tekstboks ovenpå billeder */
 .overlay {
-    position: absolute;
-    top: 58%;                        
-    left: 50%;                      
-    transform: translate(-50%, -50%);
-    background: rgba(0,0,0,0.4);     
-    color: white;
-    padding: 8px 16px;
-    border-radius: 6px;
-    font-size: 14px;
-    text-decoration: none;           /* fjern link streg */
-    display: inline-block;           /* klikbar boks */
-    cursor: pointer;
+  position: absolute;
+  top: 58%;                        
+  left: 50%;                      
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.4);     
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;           /* fjern link streg */
+  display: inline-block;           /* klikbar boks */
+  cursor: pointer;
 }
 
 .image-box.tall img {
-    max-height: 200px;
-    object-fit: cover;
+  max-height: 200px;
+  object-fit: cover;
 }
 
 .image-box {
-    position: relative;
-    flex: 1;
+  position: relative;
+  flex: 1;
 }
 
 main .row:last-of-type {
-    margin-bottom: 20px;  /* Lille luft stykke ned til SOME fodnote */
+  margin-bottom: 20px;  /* mellemrum mellem billeder og footer */
 }
 
 
-/* === FODNOTE SOME === */
+/*footer*/
 .footer {
-    border-top: 2px solid black;  /*sort linje*/
-    background-color: #d6cfc4;   
-    padding: 10px 0;
- 
+  border-top: 2px solid black;  /*sort linje*/
+  background-color: #d6cfc4;   
+  padding: 10px 0;
+}
+
+.footer{
+  font-size: 0.85rem;
+  padding: 20px 0;
+  line-height: 1.2;
+  background: #cec8bf;
+}
+
+.footer__sections {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.footer__section {
+  box-sizing: border-box;
+  width: 25%;
+  padding: 15px 0;
+  flex-shrink: 0;
+}
+
+.footer__title {
+  line-height: 0.5;
 }
 
 .footer .social-icons {
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    max-width: 390px;
-    margin: 0 auto;
-}
-
-.footer .social-icons img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
   width: 35px;
   height: 35px;
+  border-radius: 1px;
+  padding: 0.5em;
 }
 
+@media screen and (max-width: 768px) {
+  .footer__section { width: 100%; }
+}
