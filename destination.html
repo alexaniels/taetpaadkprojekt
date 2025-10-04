@@ -5,172 +5,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TætPåDK – Vælg din destination</title>
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
-   <link rel="stylesheet" href="destination.css" />
+    <link rel="stylesheet" href="destination.css" />
   </head>
 
   <body>
+    <div>
+      <!-- hamburger menu, denne position er vigtig, da ellers ryger menuen under site header-->
+      <label class="hamburger-menu">
+        <input type="checkbox" />
+      </label>
+      <aside class="sidebar">
+        <nav>
+          <div><a href="index.html">HJEM</a></div>
+          <div><a href="destination.html">DESTINATIONER</a></div>
+          <div><a href="omos.html">OM OS</a></div>
+          <div><a href="#">KONKURRENCE</a></div>
+        </nav>
+      </aside>
+    </div>
 
-  <div> <!-- hamburger menu, denne position er vigtig, da ellers ryger menuen under site header-->
-    <label class="hamburger-menu">
-      <input type="checkbox" />
-    </label>
-    <aside class="sidebar">
-      <nav>
-        <div><a href="index.html">HJEM</a></div>
-        <div><a href="destination.html">DESTINATIONER</a></div>
-        <div><a href="omos.html">OM OS</a></div>
-        <div><a href="#">KONKURRENCE</a></div>
-      </nav>
-    </aside>
-  </div>
-  
     <header class="site-header-destination">
-      <img class="logo" src="img/Logoprojekt.png">
+      <img class="logo" src="img/Logoprojekt.png" />
       <h1 class="page-title">DESTINATION</h1>
     </header>
 
-   
     <h2 class="text-destination">Vores anbefalinger</h2>
-    
-    <main class="page-main">
 
+    <main class="page-main">
       <!--Første billederække-->
-        <div class="row-destination">
+      <div class="row-destination">
         <div class="image-box-destination">
-        <img src="img/img1/mark.jpg">
-        <div class="overlay">Margueritruten</div>
-        </div>
-        <div class="image-box-destination">
-        <img src="img/img1/kano.jpg">
-        <div class="overlay">Gudenåen</div>
+          <img src="img/img1/mark.jpg" />
+          <div class="overlay">Margueritruten</div>
         </div>
         <div class="image-box-destination">
-        <img src="img/img1/gummibaad.jpg">
-        <div class="overlay">Furesøbad</div>
+          <img src="img/img1/kano.jpg" />
+          <div class="overlay">Gudenåen</div>
         </div>
+        <div class="image-box-destination">
+          <img src="img/img1/gummibaad.jpg" />
+          <div class="overlay">Furesøbad</div>
         </div>
+      </div>
 
       <!--Søgefelt-->
       <div class="search-container">
-      <input type="text" placeholder="Søg">
-      <img src="img/img1/soeg.png" class="search-icon">
-      <img src="img/img1/filter.png" class="filter-icon">
+        <input type="text" placeholder="Søg" />
+        <img src="img/img1/soeg.png" class="search-icon" />
+        <img src="img/img1/filter.png" class="filter-icon" />
       </div>
 
       <h3 class="text-destination">Populære destinationer</h3>
 
       <!-- Anden række -->
       <div class="row-destination">
-      <div class="image-box-destination">
-      <img src="img/img1/surf1.jpg">
-      <div class="overlay">Klitmøller</div>
-      </div>
-      <div class="image-box-destination">
-      <img src="img/img1/fyrtaarn1.jpg">
-      <div class="overlay">Hvide Sande</div>
-      </div>
-      <div class="image-box-destination">
-      <img src="img/img1/drager.jpg">
-      <div class="overlay">Fanø</div>
-      </div>
-      </div>
-      <!--trejde og fjerde række-->
-       <div class="row-destination">
         <div class="image-box-destination">
-          <img src="img/img1/havhytten.png">
-          <div class="overlay">Havhytten</div>
+          <img src="img/img1/surf1.jpg" />
+          <div class="overlay">Klitmøller</div>
         </div>
         <div class="image-box-destination">
-          <img src="img/img1/bornholm1.jpg">
+          <img src="img/img1/fyrtaarn1.jpg" />
+          <div class="overlay">Hvide Sande</div>
+        </div>
+        <div class="image-box-destination">
+          <img src="img/img1/drager.jpg" />
+          <div class="overlay">Fanø</div>
+        </div>
+      </div>
+      <!--trejde række -->
+      <div class="row-destination">
+        <div class="image-box-destination">
+          <img src="img/img1/havhytten.png" />
+          <div class="overlay">Havnhytten</div>
+        </div>
+        <div class="image-box-destination">
+          <img src="img/img1/bornholm1.jpg" />
           <div class="overlay">Bornholm</div>
         </div>
         <div class="image-box-destination">
-          <img src="img/img1/lynaes-surfcenter.jpg">
+          <img src="img/img1/lynaes-surfcenter.jpg" />
           <div class="overlay">Lynæs surfcenter</div>
         </div>
-           <div class="row-destination">
+      </div>
+      <!-- fjerde række -->
+      <div class="row-destination">
         <div class="image-box-destination">
-          <img src="img/img1/hegnet.jpg">
+          <img src="img/img1/hegnet.jpg" />
           <div class="overlay">Hegnet</div>
         </div>
         <div class="image-box-destination">
-          <img src="img/img1/roervigcentretsshelter.jpg.webp">
+          <img src="img/img1/roervigcentretsshelter.jpg.webp" />
           <div class="overlay">Rørvig centrets shelter</div>
         </div>
         <div class="image-box-destination">
-          <img src="img/img1/slaggaardbankeshelter.jpg">
-          <div class="overlay">Slaggård Banke shelter</div>
+          <img src="img/img1/slaggaardbankeshelter.jpg" />
+          <div class="overlay">Slaggård banke shelter</div>
         </div>
       </div>
-      </div>
-      
 
       <!--Overskrift og streg-->
-      <hr class="section-divider">
+      <hr class="section-divider" />
       <h3 class="share-title">Del dine minder med #TætpaDK</h3>
 
       <!--  tætpådk billeder -->
-  <div class="row-destination">
-  <div class="image-box-destination">
-  <a href="omos.html">
-  <img src="img/img1/madlavning.jpg">
-  <div class="overlay">#TætpaDK</div>
-  </a>
-  </div>
-  <div class="image-box-destination">
-  <a href="omos.html">
-  <img src="img/img1/topiger1.jpg">
-  <div class="overlay">#TætpaDK</div>
-  </a>
-  </div>
-  <div class="image-box-destination">
-  <a href="omos.html">
-  <img src="img/img1/etpar.jpg">
-  <div class="overlay">#TætpaDK</div>
-  </a>
-  </div>
-  </div>
+      <div class="row-destination">
+        <div class="image-box-destination">
+          <a href="omos.html">
+            <img src="img/img1/madlavning.jpg" />
+            <div class="overlay">#TætpaDK</div>
+          </a>
+        </div>
+        <div class="image-box-destination">
+          <a href="omos.html">
+            <img src="img/img1/topiger1.jpg" />
+            <div class="overlay">#TætpaDK</div>
+          </a>
+        </div>
+        <div class="image-box-destination">
+          <a href="omos.html">
+            <img src="img/img1/etpar.jpg" />
+            <div class="overlay">#TætpaDK</div>
+          </a>
+        </div>
+      </div>
     </main>
 
     <!--footer-->
     <footer class="footer">
       <div class="footer__sections container">
         <div class="footer__section">
-          <span class="footer__title"><strong>Kontakt os</strong></span> <!--strong gør teksten fed uden css-->
-            <div>TætpåDK</div>
-            <div>Havneparken 1</div>
-            <div>6000 Kolding</div>
-            <div>Danmark</div>
-            <br>
-            <div>Tlf: +45 72 11 82 00</div>
-            <div>taetpaadk@tpdk.dk</div>
-            <br>
-            <div><strong>Telefontider</strong>:</div>
-            <div>Mandag - fredag: 09:00-15:00</div>
+          <span class="footer__title"><strong>Kontakt os</strong></span>
+          <!--strong gør teksten fed uden css-->
+          <div>TætpåDK</div>
+          <div>Havneparken 1</div>
+          <div>6000 Kolding</div>
+          <div>Danmark</div>
+          <br />
+          <div>Tlf: +45 72 11 82 00</div>
+          <div>taetpaadk@tpdk.dk</div>
+          <br />
+          <div><strong>Telefontider</strong>:</div>
+          <div>Mandag - fredag: 09:00-15:00</div>
         </div>
         <div class="footer__section">
           <span class="footer__title"><strong>Informationer</strong></span>
-            <br>
-            <div><a href="omos.html">Om os</a></div>
-            <br>
-            <div>Oftest stillede spørgsmål</div>
+          <br />
+          <div><a href="omos.html">Om os</a></div>
+          <br />
+          <div>Oftest stillede spørgsmål</div>
         </div>
         <div class="footer__section">
-          <span class="footer__title"><strong>Juridiske retningslinjer</strong></span>
-            <br>
-            <div>Handelsbetingelser</div>
-            <br>
-            <div>Cookie - og privatlivspolitik</div>
-            <br>
-            <div>Konkurrencevilkår</div>
+          <span class="footer__title"
+            ><strong>Juridiske retningslinjer</strong></span
+          >
+          <br />
+          <div>Handelsbetingelser</div>
+          <br />
+          <div>Cookie - og privatlivspolitik</div>
+          <br />
+          <div>Konkurrencevilkår</div>
         </div>
-          <a href="#"><img src="img/tiktok.png" class="social-icons"></a>
-          <a href="#"><img src="img/Instagram.png" class="social-icons"></a>
-          <a href="#"><img src="img/facebook.jpg" class="social-icons"></a>
+        <div>
+          <a href="#"><img src="img/tiktok.png" class="social-icons" /></a>
+          <a href="#"><img src="img/Instagram.png" class="social-icons" /></a>
+          <a href="#"><img src="img/facebook.jpg" class="social-icons" /></a>
         </div>
       </div>
-      <br>
-     <div>© 2025, TætpåDK | All rights reserved.</div>
+      <br />
+      <div>© 2025, TætpåDK | All rights reserved.</div>
     </footer>
   </body>
 </html>
