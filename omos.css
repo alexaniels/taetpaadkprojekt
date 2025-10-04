@@ -8,16 +8,17 @@
 body {
   margin: 0;
   background-color: #EEEAE4; /*baggrundsfarve på hjemmesiden*/
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
-  --bar-width: 60px;
-  --bar-height: 8px;
+  --bar-width: 55px;
+  --bar-height: 6px;
   --hamburger-gap: 6px;
-  --foreground: black; /*farve på hamburger bar*/
+  --foreground: #333; /*farve på hamburger bar*/
   --foreground-navbar: #B9AFA1; /*baggrundsfarve i menuen*/
-  --background: black;
-  --hamburger-margin: 8px;
+  --background: #333;
+  --hamburger-margin: 50px;
   --animation-timing: 200ms ease-in-out;
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2); /*der er tre barer og mellemrum*/
 }
@@ -37,8 +38,8 @@ body {
 }
 
 .hamburger-menu:has(input:checked) {
-  --foreground: black;
-  --background: black;
+  --foreground: #333;
+  --background: #333;
 }
 
 .hamburger-menu::before,
@@ -91,7 +92,7 @@ body {
   right: 0;
   max-width: 10rem;
   min-height: 100vh;
-  z-index: 1; /*for at rykke sidebaren op på øverste lag på siden*/
+  z-index: 1; /*for at rykke sidebaren et lag over billederne på siden*/
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
@@ -103,7 +104,24 @@ color: black;
 text-decoration: none;
 }
 
-/* header*/
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 35px;                 
+  padding: 10px 20px;
+  background-color: #B9AFA1;
+  text-align: center;
+  height: 130px;
+  border-bottom: 2px solid black;  /*sort linje*/ 
+}
+
+.site-header .logo{
+  height: 100px;
+  width: auto;
+  margin-top: 35px; /* rykker logo ned */
+  margin-left: -30px; /* rykker logo til venstre */
+}
 
 .page-main.omos {
   max-width: 390px;       
