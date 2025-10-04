@@ -104,22 +104,7 @@ color: black;
 text-decoration: none;
 }
 
-/* header */ /*
-.site-header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; 
-  gap: 16px;
-  padding: 14px 16px;
-  background: #B9AFA1;
-}
-
-.site-header .logo {
-  height: 100px; 
-  width: auto;
-} */
-
-
+/* header */
 .site-header-destination {
   display: flex;
   align-items: center;
@@ -131,14 +116,12 @@ text-decoration: none;
   border-bottom: 2px solid black;  /*sort linje*/ 
 }
 
-
 .site-header-destination .logo{
   height: 100px;
   width: auto;
   margin-top: 35px; /* rykker logo ned */
   margin-left: -30px; /* rykker logo til venstre */
 }
-
 
 .site-header-destination .page-title {
   margin: 0;
@@ -172,7 +155,7 @@ text-decoration: none;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 12px;    /*luft mellem rækker*/
+  margin-top: 12px; /*luft mellem rækker*/
 }
 
 .image-box-destination {
@@ -231,14 +214,6 @@ text-decoration: none;
   object-fit: contain;
   cursor: pointer;
 }
-/*
-.tagline {
-  text-align: center;
-  margin: 0 0 20px;
-  color: #333;
-  font-size: 17px;
-  font-weight: 600;
-} */
 
 main .row-destination:last-of-type {
   margin-bottom: 20px;  /* mellemrum mellem billeder og footer */
